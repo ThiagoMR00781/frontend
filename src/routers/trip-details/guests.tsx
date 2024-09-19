@@ -1,5 +1,4 @@
-import { CheckCircle2, CircleDashed, UserCog } from "lucide-react";
-import { Button } from "../../components/button";
+import { CheckCircle2, CircleDashed } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../lib/axios";
@@ -20,9 +19,6 @@ export const Guests = () => {
     }, [tripId])
 
     return (
-        <div className="space-y-6">
-            <h2 className="font-semibold text-xl">Convidados</h2>
-
             <div className="space-y-5">
                 {participants.map((participant, index) => (
                     <div key={participant.id} className="flex items-center justify-between gap-4">
@@ -41,11 +37,5 @@ export const Guests = () => {
                     </div>
                 ))}
             </div>
-
-            <Button variant="secondary" size="full">
-                <UserCog className="size-5" />
-                Gerenciar convidados
-            </Button>
-        </div>
     )
 }

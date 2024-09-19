@@ -53,7 +53,7 @@ export const InviteGuestsModal = ({
                 
                 <Button type="submit">
                     Convidar
-            <       Plus className="size-5" />
+                <Plus className="size-5" />
                 </Button>
                 </form>
             </div>

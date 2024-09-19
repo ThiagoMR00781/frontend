@@ -2,9 +2,9 @@ import { Plus } from "lucide-react"
 import { useState } from "react"
 import { CreateActivityModal } from "./create-activity-modal"
 import { ImportantLinks } from "./important-links"
-import { Guests } from "./guests"
 import { Activities } from "./activities"
 import { DestinationAndDateHeader } from "./destination-and-date-header"
+import { ManegeGuest } from "./manage-guest"
 
 export const TripDetailsPage = () => {
     const [isCreateActivityModalOpen, setIsCreateActivityModalOpen] = useState(false)
@@ -36,7 +36,7 @@ export const TripDetailsPage = () => {
                 <div className="w-80 space-y-6">
                     <ImportantLinks />
                     <div className='w-full h-px bg-zinc-800'/>
-                    <Guests />
+                    <ManegeGuest />
                 </div>
             </main>
             

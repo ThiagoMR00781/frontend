@@ -77,9 +77,7 @@ export const CreateTripPage = () => {
     }
 
     const createTrip = async (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        
-        console.log(eventStartAndEndDates)
+        event.preventDefault()  
 
         if (!destination){
             return
